@@ -11,26 +11,44 @@
             crossOrigin="anonymous"
       />
 
-    <link rel="stylesheet" href="wishlist.css" />
+    <link rel="stylesheet" href="./css/wishlist.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
 </head>
 <body>
 
     <nav class="nav-bar">
         <h1>Akondu</h1> 
-          <ul>
-          <li> <a class="nav-links" href= "home.html">Home </a> </li>
-          <li> <a class= "nav-links" href= "wishlist.html"> Gift Registry</a></li>
+          <ul class="main-links">
+            <li> <a class="nav-links" href= "home.html">Home </a> </li>
+            <li> <a class= "nav-links" href= "wishlist.html"> Gift Registry</a></li>
           <li> <a class="nav-links" href= "be-nice.html"> Be Nice </a></li>
-      </ul>
+        </ul>
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler" />
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+              <div>
+                <div>
+                  <ul>
+                    <li> <a class="nav-links" href= "home.html">Home </a> </li>
+                    <li> <a class= "nav-links" href= "wishlist.html"> Gift Registry</a></li>
+                    <li> <a class="nav-links" href= "be-nice.html"> Be Nice </a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
       </nav>
 
 
     <div class="parent">
-        <div>
-<h2>My Wishlist</h2>
-<p class="p1"> Hi! (again).<br> I'm more than excited to have you here. Here's my wishlist. Please be a <br> darling and cross one or more items off it. Also, it doesn't matter if you can't get me anything.<br> So no pressure really. You being here already makes me very happy. </p>
-     </div> 
-</div>
+        <div class="container">
+            <h2>My Wishlist</h2>
+            <p class="p1"> Hi! (again).<br> 
+                I'm more than excited to have you here. Here's my wishlist. Please be a <br> darling and cross one or more items off it. Also, it doesn't matter if you can't get me anything.<br> 
+                So no pressure really. You being here already makes me very happy. </p>
+        </div> 
+    </div>
 
 <div class="gift-grid">
 
@@ -128,10 +146,5 @@
     </div>
                 </div>
     
-
-
-
-
-
 </body>
 </html>
