@@ -10,31 +10,42 @@
      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
             crossOrigin="anonymous"/>
 
-    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
 </head>
 <body>
 
     <nav class="nav-bar">
         <h1>Akondu</h1> 
-          <ul>
+          <ul class="main-links">
             <li> <a class="nav-links" href= "home.html">Home </a> </li>
             <li> <a class= "nav-links" href= "wishlist.html"> Gift Registry</a></li>
           <li> <a class="nav-links" href= "be-nice.html"> Be Nice </a></li>
-      </ul>
-      <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fa fa-bars"></i>
-        </label>
+        </ul>
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler" />
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+              <div>
+                <div>
+                  <ul>
+                    <li> <a class="nav-links" href= "home.html">Home </a> </li>
+                    <li> <a class= "nav-links" href= "wishlist.html"> Gift Registry</a></li>
+                    <li> <a class="nav-links" href= "be-nice.html"> Be Nice </a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
       </nav>
 
 <div class="parent">
-      <div class="header">
-<div class="overlay1">
-
-     <p class="head-para">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." </p> 
-</div>   
-        </div>
+    <div class="header">
+        <div class="overlay1">
+            <p class="head-para">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." </p> 
+        </div>   
     </div>
+</div>
 
 
 
@@ -48,9 +59,7 @@
 <section>
 <div class="container">
     <div class="about-me">
-        <div class="about-image">
-            <img src="birthday-images/image2.jpeg" />
-        </div>
+        <div class="about-image"></div>
         <div class="about-text"> 
             <h2>Well, look who's speedily approaching 30! <br>
             (Not me though, y'all be safe)</h2> 
@@ -84,6 +93,6 @@
 
 
 
-    <script type="text/javascript" src="./home.js"> </script>
+    <script type="text/javascript" src="./js/home.js"> </script>
 </body>
 </html>

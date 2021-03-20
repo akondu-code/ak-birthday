@@ -1,9 +1,20 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    /* padding-left: 40px;
-    padding-right: 40px; */
-    
+   
+   }
+   a {
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+    ul {
+      list-style: none;
+    }
+
+    .menu-wrap {
+      display: none;
     }
     
  .nav-bar {
@@ -57,7 +68,7 @@ h1 {
 .header {
    position: relative;
    /* margin-top: 70px; */
-   background: url("birthday-images/birthdaybanner.jpg") no-repeat left top/cover;
+   background: url("../birthday-images/birthdaybanner.jpg") no-repeat left top/cover;
    width: 100%;
    height: 600px; 
    color: white;
@@ -107,12 +118,12 @@ margin: 25%;
 }
 .clockdiv {
    background: #f7f7f7;
-   padding: 5rem 2rem;
+   padding: 4rem 2rem;
 }
 
 #demo {
    text-align: center;
-   font-size: 140px;
+   font-size: 130px;
    font-weight: bolder;
    color: rgb(199, 149, 22);
 }
@@ -137,11 +148,8 @@ max-width: 1100px;
    }
    
  .about-me{
-   padding: 50px, 2rem;
+   padding: 2rem 0;
    display: flex;
-   
-   /* justify-content: space-between; */
-   flex-direction: row;
  }
 /* 
  .about-me div {
@@ -153,15 +161,17 @@ max-width: 1100px;
  
 
  .about-image {
-    width: 85%;
+    width: 100%;
     height: 390px;
+    background: url("../birthday-images/image2.jpeg") no-repeat center center/cover;
+    border-radius: 10px;
  }
- .about-image img {
+ /* .about-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
- }
+ } */
 
   .about-text {
     margin-left: 2rem;
@@ -185,7 +195,7 @@ max-width: 1100px;
    background-color: #f8f8f8;
    border: 2px solid rgb(199, 149, 22);
    border-radius: 5px;
-   height: 60px;
+   height: 50px;
    width: 130px;
    text-align: center;
    font-size: 16px;
@@ -225,8 +235,7 @@ hr {
    }
    
 
-@media only screen 
-and (max-width: 1147px) {
+@media (max-width: 1147px) {
    h1 {
       font-size: 35px;
    }
@@ -235,66 +244,142 @@ and (max-width: 1147px) {
    }
 }
 
-@media only screen 
-and (max-width: 484px) {
-      .checkbtn {
-         display: block;
-      }
-      ul {
-         position: fixed;
-         width: 100%;
-         height: 100vh;
-      }
-   }
-
-   @media (max-width: 800px){
-.head-para {
-   font-size: 1.5rem;
-   width: 70%;
-}
-   }
-
-   @media (max-width: 545px){
-      .head-para {
-         font-size: 1.2rem;
-         width: 72%;
+   @media (max-width: 999px) {
+      .about-image {
+         height: 360px;
       }
    }
 
    @media (max-width: 986px) {
       #demo {
-          font-size: 70px;
-         padding: 3rem;   
+         font-size: 110px;
+      }
+   }
+
+   @media (max-width: 900px) {
+      .about-image {
+         flex: 1;
+         height: 340px;
+      }
+     
+       .about-text {
+         flex: 2;
+         margin-left: 2rem;
+      } 
+   }
+   @media (max-width: 880px) {
+      .about-image {
+         height: 320px;
+      }
+   }
+
+   @media (max-width: 846px) {
+      #demo {
+         font-size: 90px;
+      }
+   }
+
+   @media (max-width: 800px){
+      .head-para {
+         font-size: 1.8rem;
+         width: 75%;
+      }
+   }
+
+   @media (max-width: 768px) {
+      .about-image {
+         flex: 2;
+         height: 300px;
+      }
+     
+       .about-text {
+         flex: 3;
+      } 
+   }
+
+   @media (max-width: 702px) {
+      .clockdiv {
+         padding: 4rem 1rem;
+      }
+      #demo {
+         font-size: 90px;
+      }
+   }
+
+   @media (max-width: 670px) {
+      #demo {
+         font-size: 70px;
       }
    }
 
    @media (max-width: 621px) {
-      #demo {
-         font-size: 50px;
-         padding: 2rem 0.5rem;
+      .overlay1 {
+         padding: 2rem;
+         }
+   }
+
+   @media (max-width: 600px) {
+      .about-me{
+         display: block;
+       }
+       .about-image {
+         width: 80%;
+         height: 300px;
+         margin: auto;
       }
+      .about-text {
+         margin-top: 2rem;
+         margin-left: 0;
+      } 
+   }
+
+   @media (max-width: 545px){
+      .head-para {
+         font-size: 1.6rem;
+         width: 80%;
+      }
+   }
+
+   @media (max-width: 520px) {
+      .clockdiv {
+         padding: 3rem 0.5rem;
+      }
+      #demo {
+         font-size: 60px;
+      }
+   }
+
+   @media (max-width: 490px) {
+      .nav-bar {
+          justify-content: space-between;
+      }
+      .menu-wrap {
+         display: block;
+       }
+       .main-links{
+         display: none !important;
+       }
    }
 
 
    @media (max-width: 409px) {
-      #demo {
-         font-size: 45px;
-         padding: 1rem 0.5rem;
+      .overlay1 {
+         padding: 2rem 1rem;
+         }
+      .head-para {
+         font-size: 1.4rem;
+         width: 85%;
       }
-   }
+      #demo {
+         font-size: 50px;
+      }
 
-   
-   @media (max-width: 397px) {
-      #demo {
-         font-size: 40px;
-         padding: 1rem 0.5rem;
+      .about-image {
+         width: 100%;
+         height: 280px;
       }
-   }
-   
-   @media (max-width: 377px) {
-      #demo {
-         font-size: 40px;
-         padding: 1rem 0.5rem;
+      h2 {
+         font-size: 2rem;
       }
    }
    
